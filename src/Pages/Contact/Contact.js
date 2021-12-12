@@ -108,14 +108,7 @@ function Contact(props) {
             >
                 <Toolbar />
                 <Typography paragraph>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    Contact
+                   Contact 
                 </Typography>
                 <Typography paragraph>
                     Contact

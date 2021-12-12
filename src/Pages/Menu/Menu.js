@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Menu.css'
+
 const Menu = () => {
     return (
-        <div>
-        
-            <Link to={`/home`}>home</Link>
-            <br />
-        
-            <Link to={`/about`}>About</Link>
-            <br />
-            <Link to={`/contact`}>contact</Link><br />
-            <Link to={`/works`}>Works</Link>
-            <br />
-            <Link to={`/resume`}>resume</Link>
+        <div className="main-manu">
+
+            <div className='inner-main-manu'>
+                <Link className="custm-rout" to={`/home`}>home</Link>
+                <br />
+
+                <Link className="custm-rout" to={`/about`}>About</Link>
+                <br />
+                <Link className="custm-rout" to={`/contact`}>contact</Link><br />
+                <Link className="custm-rout" to={`/works`}>Works</Link>
+                <br />
+                <Link className="custm-rout" to={`/resume`}>resume</Link>
+            </div>
 
         </div>
     );

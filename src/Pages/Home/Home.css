@@ -1,7 +1,23 @@
 .custm-list span{
     font-size: 18px;
-    color: red;
     font-weight: 500;
     line-height: 50px;
     padding-left: 30px;
+}
+.custom-text{
+    color: #312b36;
+    font-weight: 600;
+    font-size: 35px;
+    font-family:  monospace;
+}
+.iGWEGz span.cursor-type{
+    background-color: #312b36 !important;
+    height: 25px;
+}
+.stay-text{
+    font-size: 35px;
+    margin-right: 10px;
+    font-family:  monospace;
+    color: rgb(119, 146, 187);
+    font-weight: 600;
 }
