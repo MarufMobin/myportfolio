@@ -16,7 +16,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import './Home.css'
-import { Link, useRouteMatch} from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
+import Menu from '../Menu/Menu';
 
 const drawerWidth = 240;
 
@@ -34,22 +35,9 @@ function Home(props) {
   const drawer = (
     <div>
       <Toolbar />
-      {/* <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts', 'Home','About'].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} className="custm-list"/>
-          </ListItem>
-        ))}
-      </List> */}
       
-      <Link to={`${match.url}/home`}>home</Link>
-      <br />
-      <Link to={`${match.url}/about`}>about</Link>
-      <br />
-      <Link to={`${match.url}/contact`}>contact</Link>
-      <br />
-      <Link to={`${match.url}/resume`}>resume</Link>
-      
+     <Menu></Menu>
+
     </div>
   );
 
