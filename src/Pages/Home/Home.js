@@ -45,7 +45,7 @@ function Home(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }} >
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -55,7 +55,7 @@ function Home(props) {
           display: { lg: 'none' }
         }}
       >
-        <Toolbar>
+        <Toolbar className='cust-bg-color'>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -66,8 +66,8 @@ function Home(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+          <Typography variant="h6" noWrap component="div" sx={{ display: { sm: 'none' }}} >
+            Maruf's PortFolio
           </Typography>
         </Toolbar>
       </AppBar>
@@ -87,7 +87,7 @@ function Home(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', sm: 'none', md: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
 
@@ -110,13 +110,16 @@ function Home(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <Typography style={{ fontSize: "35px", fontWeight: "600", fontFamilly: "monospace" }}>
+        <p style={{ fontSize: "85px", fontWeight: "600", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "75%"}}>
           Hi , My Name Maruf
-        </Typography>
-        <Typography>
-          <span className='stay-text'> I am</span>
+        </p>
+        <Typography style={{  width: "75%"}}>
+          <span className='stay-text' > I am</span>
           <Typewriter className='custom-text' words={['Web App Developer', 'Js Developer', 'React Developer', 'Web Developer']} />
         </Typography>
+        <p className='custom-text-decoration'>
+          Hi Everyone, I am a MERN Stack Developer and Front-End Developer also Knowing Full Stack Technology. I have also knowledge about Elementor And WordPress tech
+        </p>
       </Box>
     </Box>
   );

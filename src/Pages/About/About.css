@@ -1,0 +1,10 @@
+.custom-about{
+    width: 70%;
+    margin: 0px auto;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 22px;
+    color: rgb(13, 83, 139);
+    font-family:  monospace;
+    font-weight: 600;
+}
