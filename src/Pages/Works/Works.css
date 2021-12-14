@@ -1,7 +1,6 @@
 .works-main{
     width: 80%;
     margin: 0px auto;
-    height: 700px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 40px;
@@ -63,4 +62,9 @@ letter-spacing: 2px;
 padding: 8px 30px;
 margin-bottom: 35px;
 text-decoration: none;
+transition: .3s;
+border-radius: 5px;
+}
+.cutm-btn:hover{
+    background-color: #7890ae;
 }
