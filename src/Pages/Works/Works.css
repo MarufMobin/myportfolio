@@ -1,0 +1,66 @@
+.works-main{
+    width: 80%;
+    margin: 0px auto;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 40px;
+}
+.works-main .inner-works-img-one{
+    background-image: url(../../images/hospital.png);
+}
+.works-main .inner-works-img-two{
+    background-image: url(../../images/coffie.png);
+}
+.works-main .inner-works-img-three{
+    background-image: url(../../images/marrige.png);
+}
+.works-main .inner-works-img-four{
+    background-image: url(../../images/yoga.png);
+}
+.works-main .inner-works-img-five{
+    background-image: url(../../images/tour.png);
+}
+.works-main .inner-works-img-six{
+    background-image: url(../../images/automobile.png);
+}
+.works-main .inner-works-img-seven{
+    background-image: url(../../images/corporate.png);
+}
+.works-main .inner-works-img-eight{
+    background-image: url(../../images/tourish.png);
+}
+.inner-works{
+    width: 80%;
+    display: inline-block;
+    margin: 20px 0px 0px 20px;
+    height: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+    text-align: center;
+    border: 3px solid #95a0b4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:  flex-end;
+}
+.inner-works:hover{
+    cursor: pointer;
+    background-position: bottom;
+}
+
+.inner-works img{
+    width: 300px;
+}
+.cutm-btn{
+display: block;
+background-color: #000;
+border: none;
+color: #fff;
+letter-spacing: 2px;
+padding: 8px 30px;
+margin-bottom: 35px;
+text-decoration: none;
+}

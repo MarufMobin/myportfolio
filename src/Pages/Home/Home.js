@@ -110,7 +110,7 @@ function Home(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <p style={{ fontSize: "85px", fontWeight: "600", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "75%"}}>
+        <p style={{ fontSize: "85px",paddingTop:"100px", fontWeight: "600", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "75%"}}>
           Hi , My Name Maruf
         </p>
         <Typography style={{  width: "75%"}}>

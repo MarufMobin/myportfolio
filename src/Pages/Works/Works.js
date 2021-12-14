@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import { Link, useRouteMatch } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import './Works.css';
-// import '../../images/'
+
 
 const drawerWidth = 240;
 
@@ -35,6 +35,8 @@ function Works(props) {
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
+
+    
 
     return (
         <Box sx={{ display: 'flex' }}>
@@ -102,9 +104,30 @@ function Works(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
-                <div className='works-main-div'>
-                    <div className="inner-works-div">
-                        <img src="" alt="" />
+                <div className='works-main'>
+                    <div className="inner-works inner-works-img-one">
+                         <a href="https://hospitalwebapplication.web.app/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-two">
+                         <a href="https://zulzana-coffie.web.app/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-three">
+                         <a href="https://wedding-ceremony.netlify.app/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-four">
+                         <a href="https://marufmubin.github.io/Zulzana/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-five">
+                         <a href="https://travel-agency-c10b6.web.app/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-six">
+                         <a href="https://marufmobin.github.io/automobile/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-seven">
+                         <a href="https://marufmubin.github.io/new/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
+                    <div className="inner-works inner-works-img-eight">
+                        <a href="https://marufmubin.github.io/GoHub-Project/" target="_blank" className='cutm-btn'>Visit</a>
                     </div>
                 </div>
             </Box>
