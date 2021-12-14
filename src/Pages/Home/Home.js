@@ -115,7 +115,7 @@ function Home(props) {
         </p>
         <Typography style={{  width: "75%"}}>
           <span className='stay-text' > I am</span>
-          <Typewriter className='custom-text' words={['Web App Developer', 'Js Developer', 'React Developer', 'Web Developer']} />
+          <Typewriter className='custom-text' words={['Web App Developer', 'Js Developer', 'React Developer', 'Web Developer','Ui Desinger']} />
         </Typography>
         <p className='custom-text-decoration'>
           Hi Everyone, I am a MERN Stack Developer and Front-End Developer also Knowing Full Stack Technology. I have also knowledge about Elementor And WordPress tech
