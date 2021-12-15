@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import './Home.css'
-import { Link, useRouteMatch } from 'react-router-dom';
+import {  useRouteMatch } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import { Typewriter } from 'typewriting-react';
 
@@ -64,7 +64,7 @@ function Home(props) {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Box
+      <div
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
@@ -97,23 +97,23 @@ function Home(props) {
         >
           {drawer}
         </Drawer>
-      </Box>
-      <Box
+      </div>
+      <div
         component="main"
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <p style={{ fontSize: "75px",paddingTop:"120px", fontWeight: "500", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "70%"}}>
+        <p style={{ fontSize: "75px",paddingTop:"150px", fontWeight: "500", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "90%"}}>
           Hi , My Name Maruf
         </p>
-        <Typography style={{  width: "70%"}}>
+        <p style={{  width: "90%"}}>
           <span className='stay-text' > I am</span>
           <Typewriter className='custom-text' words={['Web App Developer', 'Js Developer', 'React Developer', 'Web Developer','Ui Desinger']} />
-        </Typography>
+        </p>
         <p className='custom-text-decoration'>
           Hi Everyone, I am a MERN Stack Developer and Front-End Developer also Knowing Full Stack Technology. I have also knowledge about Elementor And WordPress tech
         </p>
-      </Box>
+      </div>
     </Box>
   );
 }
