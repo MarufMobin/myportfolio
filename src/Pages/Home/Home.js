@@ -3,15 +3,8 @@ import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-// import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import List from '@mui/material/List';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-// import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -110,7 +103,7 @@ function Home(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <p style={{ fontSize: "85px",paddingTop:"100px", fontWeight: "600", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "75%"}}>
+        <p style={{ fontSize: "75px",paddingTop:"100px", fontWeight: "500", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "70%"}}>
           Hi , My Name Maruf
         </p>
         <Typography style={{  width: "75%"}}>

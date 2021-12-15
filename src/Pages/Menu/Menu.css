@@ -1,4 +1,4 @@
-.custm-rout{
+.custm-rout {
     text-decoration: none;
     line-height: 80px;
     font-size: 18px;
@@ -6,16 +6,20 @@
     color: rgba(109, 179, 242);
     transition: .3s;
 }
-.custm-rout:hover{
+
+.custm-rout:hover {
     color: rgb(136 153 178)
 }
-.main-manu{
+
+.main-manu {
     display: flex;
 }
-.inner-main-manu{
+
+.inner-main-manu {
     align-items: center;
     justify-content: center;
 }
-.css-d9ml5t-MuiDrawer-docked .MuiDrawer-paper{
+
+.css-d9ml5t-MuiDrawer-docked .MuiDrawer-paper {
     justify-content: center;
 }
