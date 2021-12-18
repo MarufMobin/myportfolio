@@ -8,7 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { useRouteMatch } from 'react-router-dom';
+import './Resume.css'
 import Menu from '../Menu/Menu';
 
 const drawerWidth = 240;
@@ -28,7 +29,7 @@ function Resume(props) {
     <div>
       <Toolbar />
       <Menu></Menu>
- 
+
 
     </div>
   );
@@ -101,9 +102,65 @@ function Resume(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <Typography paragraph>
-         Resume
-        </Typography>
+        <div className='resume-wrapper'>
+          <div className="inner-resume-wrapper-fist">
+            <h2>Md : Maruf</h2>
+            <h4>Jr. Front-End Web Developer</h4>
+          </div>
+          <div>
+            <ul>
+              <li> Email : mdmarufmubin@gmail.com</li>
+              <li>Address : Mirpur 12, kalsi Dhaka</li>
+              <li>Phone : +00801322409861</li>
+              <li><a href="">Portfolio ||</a><a href="">Github ||</a><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div className="">
+            <h2>❖ SKILLS :</h2>
+            <ul>
+              <li> Comfortable : React Js, Javascript, PHP, ES6, HTML, CSS ,
+                Bootstrap, Tailwind css, Material UI, Firebase , Sql , No Sql , MongoDB</li>
+              <li> Familiar : Node.JS, Express.JS, SASS.</li>
+              <li> Tools : GitHub, VS Code, Chrome Dev tool, Postman, Heroku,
+                MongoDB, Compass, Netlify and Firebase.</li>
+
+            </ul>
+          </div>
+          <div>
+          <h2>❖ EDUCATION :</h2>
+            
+            <ul>
+              <li>  Ideal Institute of Science and Technology
+            Diploma in Computer Engineering -Dhaka, Bangladesh.
+            Expected to Graduate in 2023.</li>
+              <li> BSS Degree
+            Govt. Bongobondhu University-Dhaka, Bangladesh
+            Expected to Graduate in 2022.</li>
+              
+            </ul>
+           
+            
+          </div>
+          <div>
+          <h2>❖ COURSE :</h2>
+           
+            <ul>
+              <li> Complete Web Development
+            Programming Hero, San Jose, CA ( MERN Stack )</li>
+              <li>ShikbeShobai , Dhaka Bangladesh ( Full Stack Web Development )
+            </li>
+              <li>Skills for Employment Investment Program (SEEP) ( Interactive Web design )</li>
+            </ul>
+            
+            <h2>❖ LANGUAGES :</h2>
+           
+              <ul>
+                <li>Bangla , English and Urdu</li>
+              </ul>
+                <button>Resume Download</button>
+          </div>
+        
+        </div>
       </Box>
     </Box>
   );

@@ -1,35 +1,44 @@
-.works-main{
+.works-main {
     width: 80%;
     margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 40px;
 }
-.works-main .inner-works-img-one{
+
+.works-main .inner-works-img-one {
     background-image: url(../../images/hospital.png);
 }
-.works-main .inner-works-img-two{
+
+.works-main .inner-works-img-two {
     background-image: url(../../images/coffie.png);
 }
-.works-main .inner-works-img-three{
+
+.works-main .inner-works-img-three {
     background-image: url(../../images/marrige.png);
 }
-.works-main .inner-works-img-four{
+
+.works-main .inner-works-img-four {
     background-image: url(../../images/yoga.png);
 }
-.works-main .inner-works-img-five{
+
+.works-main .inner-works-img-five {
     background-image: url(../../images/tour.png);
 }
-.works-main .inner-works-img-six{
+
+.works-main .inner-works-img-six {
     background-image: url(../../images/automobile.png);
 }
-.works-main .inner-works-img-seven{
+
+.works-main .inner-works-img-seven {
     background-image: url(../../images/corporate.png);
 }
-.works-main .inner-works-img-eight{
+
+.works-main .inner-works-img-eight {
     background-image: url(../../images/tourish.png);
 }
-.inner-works{
+
+.inner-works {
     width: 80%;
     display: inline-block;
     margin: 20px 0px 0px 20px;
@@ -43,28 +52,31 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items:  flex-end;
+    align-items: flex-end;
 }
-.inner-works:hover{
+
+.inner-works:hover {
     cursor: pointer;
     background-position: bottom;
 }
 
-.inner-works img{
+.inner-works img {
     width: 300px;
 }
-.cutm-btn{
-display: block;
-background-color: #000;
-border: none;
-color: #fff;
-letter-spacing: 2px;
-padding: 8px 30px;
-margin-bottom: 35px;
-text-decoration: none;
-transition: .3s;
-border-radius: 5px;
+
+.cutm-btn {
+    display: block;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 8px 30px;
+    margin-bottom: 35px;
+    text-decoration: none;
+    transition: .3s;
+    border-radius: 5px;
 }
-.cutm-btn:hover{
+
+.cutm-btn:hover {
     background-color: #7890ae;
 }

@@ -98,8 +98,42 @@ function About(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
-                <div  className='custom-about'> 
-                        My name is Maruf . Hi Everyone, I am a MERN Stack Developer and Front-End Developer also Knowing Full Stack Technology. I have also knowledge about Elementor And WordPress techonology. This is my Key Frame MERN Stack Developer | Front-End Developer | Full Stack Developer | Elementor And WordPress | JavaScript Developer
+                <div className='custom-about'>
+                    <div className='inner-about-fist'>
+                        <div className='malti-about-inner'>
+                            <h2>Web Developer & Designer</h2>
+                            <span> My name is Maruf . Hi Everyone, I am a MERN Stack Developer and Front-End Developer also Knowing Full Stack Technology. I have also knowledge about Elementor And WordPress techonology. This is my Key Frame MERN Stack Developer | Front-End Developer | Full Stack Developer | Elementor And WordPress | JavaScript Developer</span>
+                        </div>
+                        <div className='satisfy-clients'>
+                            <div className='inner-satisfy-clints'>
+                                <h6>icon</h6>
+                                <h1>8+</h1>
+                                <h5>Happy Clients</h5>
+                            </div>
+                            
+                            <div className='inner-satisfy-clints'>
+                                <h6>icon</h6>
+                                <h1>8+</h1>
+                                <h5>Happy Clients</h5>
+                            </div>
+                            
+                            <div className='inner-satisfy-clints'>
+                                <h6>icon</h6>
+                                <h1>8+</h1>
+                                <h5>Happy Clients</h5>
+                            </div>
+                            
+                            <div className='inner-satisfy-clints'>
+                                <h6>icon</h6>
+                                <h1>8+</h1>
+                                <h5>Happy Clients</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div className='inner-about-second'>
+                        jskdfjaklsdfj
+                    </div>
                 </div>
             </Box>
         </Box>
