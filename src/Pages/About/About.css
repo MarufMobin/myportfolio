@@ -111,6 +111,6 @@
 
 @media (min-width: 600px) {
     .css-191lty2 {
-        min-height: 0px;
+        min-height: 0px !important;
     }
 }
