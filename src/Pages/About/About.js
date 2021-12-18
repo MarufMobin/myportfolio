@@ -55,7 +55,7 @@ function About(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        Responsive drawer
+                        Maruf's Potfolio
                     </Typography>
                 </Toolbar>
             </AppBar>

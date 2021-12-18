@@ -61,7 +61,7 @@ function Works(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        Responsive drawer
+                        Maruf's Portfolio
                     </Typography>
                 </Toolbar>
             </AppBar>

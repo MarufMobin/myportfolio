@@ -59,7 +59,7 @@ function Resume(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Maruf's Portfolio
           </Typography>
         </Toolbar>
       </AppBar>
@@ -127,39 +127,39 @@ function Resume(props) {
             </ul>
           </div>
           <div>
-          <h2>❖ EDUCATION :</h2>
-            
+            <h2>❖ EDUCATION :</h2>
+
             <ul>
               <li className='text-deco'>  Ideal Institute of Science and Technology
-            Diploma in Computer Engineering -Dhaka, Bangladesh.
-            Expected to Graduate in 2023.</li>
+                Diploma in Computer Engineering -Dhaka, Bangladesh.
+                Expected to Graduate in 2023.</li>
               <li className='text-deco'> BSS Degree
-            Govt. Bongobondhu University-Dhaka, Bangladesh
-            Expected to Graduate in 2022.</li>
-              
+                Govt. Bongobondhu University-Dhaka, Bangladesh
+                Expected to Graduate in 2022.</li>
+
             </ul>
-           
-            
+
+
           </div>
           <div>
-          <h2>❖ COURSE :</h2>
-           
+            <h2>❖ COURSE :</h2>
+
             <ul>
               <li> Complete Web Development
-            Programming Hero, San Jose, CA ( MERN Stack )</li>
+                Programming Hero, San Jose, CA ( MERN Stack )</li>
               <li>ShikbeShobai , Dhaka Bangladesh ( Full Stack Web Development )
-            </li>
+              </li>
               <li>Skills for Employment Investment Program (SEEP) ( Interactive Web design )</li>
             </ul>
-            
+
             <h2>❖ LANGUAGES :</h2>
-           
-              <ul>
-                <li>Bangla , English and Urdu</li>
-              </ul>
-                <button>Resume Download</button>
+
+            <ul>
+              <li>Bangla , English and Urdu</li>
+            </ul>
+            <button>Resume Download</button>
           </div>
-        
+
         </div>
       </Box>
     </Box>

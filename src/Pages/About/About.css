@@ -83,4 +83,28 @@
     .main-form {
         background: none !important;
     }
+    .resume-wrapper {
+        margin: 20px 0px 0px !important;
+        padding-left: 10px;
+    }
+    .text-deco {
+        width: 100% !important;
+    }
+    .inner-home-text {
+        padding: 0px;
+        font-size: 36px;
+        width: 100%;
+    }
+    .stay-text,
+    .custom-text {
+        font-size: 42px;
+        width: 100%;
+    }
+    .custom-text-decoration {
+        margin: 0px;
+        width: 100%;
+        text-align: justify;
+        padding: 14px;
+        font-size: 20px;
+    }
 }

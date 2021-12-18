@@ -49,3 +49,13 @@
     margin: 80px;
     padding: 20px;
 }
+
+.inner-home-text {
+    font-size: 75px;
+    padding-top: 150px;
+    font-weight: 700;
+    font-family: monospace;
+    color: #fff;
+    margin-bottom: 0px;
+    width: 90%;
+}

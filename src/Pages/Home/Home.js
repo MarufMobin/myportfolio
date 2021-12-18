@@ -103,7 +103,7 @@ function Home(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <p style={{ fontSize: "75px",paddingTop:"150px", fontWeight: "500", fontFamilly: "monospace", color: "#fff", marginBottom: "0px" , width: "90%"}}>
+        <p className='inner-home-text'>
           Hi , My Name Maruf
         </p>
         <p style={{  width: "90%"}}>
