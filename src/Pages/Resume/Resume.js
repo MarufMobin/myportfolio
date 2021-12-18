@@ -105,23 +105,23 @@ function Resume(props) {
         <div className='resume-wrapper'>
           <div className="inner-resume-wrapper-fist">
             <h2>Md : Maruf</h2>
-            <h4>Jr. Front-End Web Developer</h4>
+            <span><strong>Jr. Front-End Web Developer</strong></span>
           </div>
           <div>
             <ul>
-              <li> Email : mdmarufmubin@gmail.com</li>
-              <li>Address : Mirpur 12, kalsi Dhaka</li>
-              <li>Phone : +00801322409861</li>
-              <li><a href="">Portfolio ||</a><a href="">Github ||</a><a href="">LinkedIn</a></li>
+              <li> <strong> Email </strong>: mdmarufmubin@gmail.com</li>
+              <li> <strong>Address</strong> : Mirpur 12, kalsi Dhaka</li>
+              <li> <strong>Phone </strong>: +00801322409861</li>
+              <li><a className="link-style" href="https://marufmobin.netlify.app/" target='_blank'>Portfolio ||</a><a className="link-style" href="https://github.com/MarufMobin" target='_blank'>Github ||</a><a className="link-style" href="https://www.linkedin.com/in/marufmobin/" target='_blank'>LinkedIn</a></li>
             </ul>
           </div>
           <div className="">
             <h2>❖ SKILLS :</h2>
             <ul>
-              <li> Comfortable : React Js, Javascript, PHP, ES6, HTML, CSS ,
+              <li className='text-deco'><span className='inner-text-deco'> Comfortable </span>: React Js, Javascript, PHP, ES6, HTML, CSS ,
                 Bootstrap, Tailwind css, Material UI, Firebase , Sql , No Sql , MongoDB</li>
-              <li> Familiar : Node.JS, Express.JS, SASS.</li>
-              <li> Tools : GitHub, VS Code, Chrome Dev tool, Postman, Heroku,
+              <li> <span className='inner-text-deco'>Familiar </span>: Node.JS, Express.JS, SASS.</li>
+              <li className='text-deco'> <span className='inner-text-deco'>Tools </span>: GitHub, VS Code, Chrome Dev tool, Postman, Heroku,
                 MongoDB, Compass, Netlify and Firebase.</li>
 
             </ul>
@@ -130,10 +130,10 @@ function Resume(props) {
           <h2>❖ EDUCATION :</h2>
             
             <ul>
-              <li>  Ideal Institute of Science and Technology
+              <li className='text-deco'>  Ideal Institute of Science and Technology
             Diploma in Computer Engineering -Dhaka, Bangladesh.
             Expected to Graduate in 2023.</li>
-              <li> BSS Degree
+              <li className='text-deco'> BSS Degree
             Govt. Bongobondhu University-Dhaka, Bangladesh
             Expected to Graduate in 2022.</li>
               
