@@ -157,7 +157,8 @@ function Resume(props) {
             <ul>
               <li>Bangla , English and Urdu</li>
             </ul>
-            <button>Resume Download</button>
+            <a href='https://drive.google.com/uc?export=download&id=1EVqq81Q3PE-m8zP76EqM5FiwoUSeYGYx
+' download='https://drive.google.com/file/d/1EVqq81Q3PE-m8zP76EqM5FiwoUSeYGYx/view?usp=sharing' className='resume-btn'> Download Resume</a>
           </div>
 
         </div>
