@@ -58,7 +58,7 @@ function Contact(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                       Maruf's Portfolio
+                        Maruf's Portfolio
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -102,14 +102,17 @@ function Contact(props) {
             >
                 <Toolbar />
                 <form className='main-form'>
-                    <h2 style={{textAlign: "left", color:"#fff",fontSize:"42px", fontWeight:"400"}}>Contact Me</h2>
-                    <p style={{textAlign:"left", fontSize:"22px", color:"#fff", marginBottom:"10px"}}>Fast Name</p>
+                    <h2 style={{ textAlign: "left", color: "#fff", fontSize: "42px", fontWeight: "400" }}>Contact Me</h2>
+                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Fast Name</p>
                     <input type="text" className='form-control' />
-                    <p style={{textAlign:"left", fontSize:"22px", color:"#fff", marginBottom:"10px"}}>Last Name </p>
-                    <input type="text" className='form-control'/>
-                    <p style={{textAlign:"left", fontSize:"22px", color:"#fff", marginBottom:"10px"}}>Email</p>
-                    <input type="email" className='form-control'/>
-                    <div style={{textAlign:"left"}}><input type="submit" className='form-btn' /></div>
+                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Last Name </p>
+                    <input type="text" className='form-control' />
+                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Email</p>
+                    <input type="email" className='form-control' />
+                    <div style={{ textAlign: "left" }}>
+                        <button className='form-btn'>Submit</button>
+                    </div>
+
                 </form>
             </Box>
         </Box>
