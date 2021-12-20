@@ -9,9 +9,26 @@ import './About.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { useRouteMatch } from 'react-router-dom';
+import { styled } from '@mui/material/styles';
+
+import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
+
 import Menu from '../Menu/Menu';
 const drawerWidth = 240;
+
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+    height: 10,
+    borderRadius: 5,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 5,
+      backgroundColor: theme.palette.mode === 'light' ? '#4d6690' : '#308fe8',
+    },
+  }));
+  
 
 function About(props) {
     const { window } = props;
@@ -30,10 +47,11 @@ function About(props) {
         </div>
     );
 
+
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex' }} className='about-body'>
             <CssBaseline />
             <AppBar
                 position="fixed"
@@ -110,29 +128,38 @@ function About(props) {
                                 <h1>8+</h1>
                                 <h5>Happy Clients</h5>
                             </div>
-                            
+
                             <div className='inner-satisfy-clints'>
                                 <h6>icon</h6>
                                 <h1>8+</h1>
                                 <h5>Happy Clients</h5>
                             </div>
-                            
+
                             <div className='inner-satisfy-clints'>
                                 <h6>icon</h6>
                                 <h1>8+</h1>
                                 <h5>Happy Clients</h5>
                             </div>
-                            
+
                             <div className='inner-satisfy-clints'>
                                 <h6>icon</h6>
                                 <h1>8+</h1>
                                 <h5>Happy Clients</h5>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div className='inner-about-second'>
-                        jskdfjaklsdfj
+                        <Box sx={{ flexGrow: 1 }}>
+                            <h3 className="skill-name">Javascript</h3>
+                            <BorderLinearProgress variant="determinate" value={90} />
+                            <h3 className="skill-name">React</h3>
+                            <BorderLinearProgress variant="determinate" value={90} />
+                            <h3 className="skill-name">Node js</h3>
+                            <BorderLinearProgress variant="determinate" value={85} />
+                            <h3 className="skill-name">PHP</h3>
+                            <BorderLinearProgress variant="determinate" value={90} />
+                        </Box>
                     </div>
                 </div>
             </Box>

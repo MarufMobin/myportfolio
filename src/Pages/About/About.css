@@ -1,3 +1,12 @@
+.about-body {
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(109, 179, 242, .6), rgb(228 204 194)), url(../../images/marufmobin.png);
+    background-size: cover, 600px;
+    background-position: center, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+}
+
 .custom-about {
     width: 80%;
     margin: 120px auto;
@@ -5,13 +14,11 @@
 }
 
 .inner-about-fist {
-    background-color: red;
     width: 60%;
     padding: 40px;
 }
 
 .inner-about-second {
-    background-color: green;
     width: 40%;
     padding: 40px;
 }
@@ -31,7 +38,7 @@
 
 .satisfy-clients {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -113,4 +120,9 @@
     .css-191lty2 {
         min-height: 0px !important;
     }
+}
+
+.skill-name {
+    color: #fff;
+    text-align: left;
 }
