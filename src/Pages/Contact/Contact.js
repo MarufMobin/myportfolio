@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -17,7 +17,7 @@ import { useForm, ValidationError } from '@formspree/react';
 const drawerWidth = 240;
 
 function Contact(props) {
-    const [ conform, setConform ] = useState(true)
+    
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -39,10 +39,6 @@ function Contact(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     const [state, handleSubmit] = useForm("mknynlpb");
-    if (state.succeeded) {
-        return setConform(false);
-    }
-
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
@@ -135,18 +131,13 @@ function Contact(props) {
                         field="message"
                         errors={state.errors}
                     />
-
-{/*                    
-                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Last Name </p>
-                    <input type="text"  />
-                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Email</p>
-                    <input type="email" className='form-control' /> */}
                     <div style={{ textAlign: "left" }}>
                         <button className='form-btn' type="submit" disabled={state.submitting}>Submit</button>
                     </div>
 
                     {
-                        conform || <Alert severity="success" style={{marginTop:"40px"}}>This is a success alert — check it out!</Alert>
+                       state.succeeded && <Alert severity="success" style={{marginTop:"40px", width: "50%"}}>Success Full Send Your Mail </Alert>
+                       
                     }
 
                 </form>
