@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -10,11 +10,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Link, useRouteMatch } from 'react-router-dom';
 import Menu from '../Menu/Menu';
+import Alert from '@mui/material/Alert';
 import './Contact.css'
+import { useForm, ValidationError } from '@formspree/react';
 
 const drawerWidth = 240;
 
 function Contact(props) {
+    const [ conform, setConform ] = useState(true)
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -34,6 +37,11 @@ function Contact(props) {
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
+
+    const [state, handleSubmit] = useForm("mknynlpb");
+    if (state.succeeded) {
+        return setConform(false);
+    }
 
     return (
         <Box sx={{ display: 'flex' }}>
@@ -101,17 +109,45 @@ function Contact(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
-                <form className='main-form'>
+                <form className='main-form' onSubmit={handleSubmit}>
                     <h2 style={{ textAlign: "left", color: "#fff", fontSize: "42px", fontWeight: "400" }}>Contact Me</h2>
-                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Fast Name</p>
-                    <input type="text" className='form-control' />
+
+                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Enter Your Email</p>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        className='form-control ok'
+                    />
+                    <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                    />
+                    <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Enter Your Opinion</p>
+                    <textarea
+                        id="message"
+                        name="message"
+                        className='form-control'
+                    />
+                    <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                    />
+
+{/*                    
                     <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Last Name </p>
-                    <input type="text" className='form-control' />
+                    <input type="text"  />
                     <p style={{ textAlign: "left", fontSize: "22px", color: "#fff", marginBottom: "10px" }}>Email</p>
-                    <input type="email" className='form-control' />
+                    <input type="email" className='form-control' /> */}
                     <div style={{ textAlign: "left" }}>
-                        <button className='form-btn'>Submit</button>
+                        <button className='form-btn' type="submit" disabled={state.submitting}>Submit</button>
                     </div>
+
+                    {
+                        conform || <Alert severity="success" style={{marginTop:"40px"}}>This is a success alert — check it out!</Alert>
+                    }
 
                 </form>
             </Box>
