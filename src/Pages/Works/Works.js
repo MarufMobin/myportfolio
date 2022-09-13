@@ -105,14 +105,14 @@ function Works(props) {
             >
                 <Toolbar />
                 <div className='works-main'>
+                     <div className="inner-works inner-works-img-three">
+                         <a href="https://date-kori.netlify.app/" target="_blank" className='cutm-btn'>Visit</a>
+                    </div>
                     <div className="inner-works inner-works-img-one">
                          <a href="https://hospitalwebapplication.web.app/" target="_blank" className='cutm-btn'>Visit</a>
                     </div>
                     <div className="inner-works inner-works-img-two">
                          <a href="https://zulzana-coffie.web.app/" target="_blank" className='cutm-btn'>Visit</a>
-                    </div>
-                    <div className="inner-works inner-works-img-three">
-                         <a href="https://wedding-ceremony.netlify.app/" target="_blank" className='cutm-btn'>Visit</a>
                     </div>
                     <div className="inner-works inner-works-img-four">
                          <a href="https://marufmubin.github.io/Zulzana/" target="_blank" className='cutm-btn'>Visit</a>
