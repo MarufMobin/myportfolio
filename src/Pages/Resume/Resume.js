@@ -109,10 +109,18 @@ function Resume(props) {
           </div>
           <div>
             <ul>
-              <li> <strong> Email </strong>: mdmarufmubin@gmail.com</li>
-              <li> <strong>Address</strong> : Mirpur 12, kalsi Dhaka</li>
+              <li> <strong> Email </strong>: mobinh264@gmail.com</li>   
               <li> <strong>Phone </strong>: +00801322409861</li>
-              <li><a className="link-style" href="https://marufmobin.netlify.app/" target='_blank'>Portfolio ||</a><a className="link-style" href="https://github.com/MarufMobin" target='_blank'>Github ||</a><a className="link-style" href="https://www.linkedin.com/in/marufmobin/" target='_blank'>LinkedIn</a></li>
+              
+              {/* all links are here */}
+              <li>
+                <a className="link-style" href="https://marufmobin.netlify.app/" target='_blank'>Portfolio ||</a><a className="link-style" href="https://github.com/MarufMobin" target='_blank'>Github ||</a>
+              <a className="link-style" href="https://www.google.com/search?q=maruf+mobin" target='_blank'>Google ||</a>
+              <a className="link-style" href="https://www.linkedin.com/in/marufmobin/" target='_blank'>LinkedIn</a></li>
+              <li>
+                <a href="https://github.com/MarufMobin/MyAllRepo/blob/master/allproject.txt" className='text-edit'target="_blank"><strong>My all project link</strong> <span className='link-style'>here  </span></a> 
+                <a href="https://drive.google.com/drive/folders/17Mydo0wjgZmxxvIXhvO9nKfbaGLNMOVM" className='text-edit ms-2'target="_blank"><strong>   &nbsp; &nbsp; &nbsp; My all project image showcase </strong><span className='link-style'>here</span></a>
+              </li>
             </ul>
           </div>
           <div className="">
@@ -157,8 +165,7 @@ function Resume(props) {
             <ul>
               <li>Bangla , English and Urdu</li>
             </ul>
-            <a href='https://drive.google.com/uc?export=download&id=1EVqq81Q3PE-m8zP76EqM5FiwoUSeYGYx
-' download='https://drive.google.com/file/d/1EVqq81Q3PE-m8zP76EqM5FiwoUSeYGYx/view?usp=sharing' className='resume-btn'> Download Resume</a>
+            <a href='https://drive.google.com/uc?export=download&id=1vW5gj8rFfD2Pc435kD52KZfg7Hp1P2Ch' download='https://drive.google.com/file/d/1vW5gj8rFfD2Pc435kD52KZfg7Hp1P2Ch/view?usp=sharing' className='resume-btn'> Download Resume</a>
           </div>
 
         </div>
